@@ -1,16 +1,53 @@
-# React + Vite
+﻿# Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React shopping cart application built with Vite and Tailwind CSS. The app includes product listing, product details, cart management, and shared cart state using React Context.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Product listing with add-to-cart actions
+- Product details pages
+- Cart page with selected items and totals
+- Shared cart state managed via React Context
+- Built with React, Vite, React Router, and Tailwind CSS
 
-## React Compiler
+## Project structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/main.jsx` — App entry point
+- `src/App.jsx` — Main application component and routes
+- `src/context/index.jsx` — Cart context provider and state management
+- `src/pages/productList/index.jsx` — Product listing page
+- `src/pages/productDetails/index.jsx` — Product detail page
+- `src/pages/cartList/index.jsx` — Shopping cart page
+- `src/components/productTile/index.jsx` — Product card component
+- `src/components/cartTile/index.jsx` — Cart item component
 
-## Expanding the ESLint configuration
+## Getting started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 18+ recommended
+- npm or yarn installed
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal to view the app.
+
+## Notes
+
+- Vite provides fast development server and optimized builds.
+- React Router handles page navigation.
+- Tailwind CSS is included through `@tailwindcss/vite`.
+
+## License
+
+This project is provided as-is for learning and experimentation.
